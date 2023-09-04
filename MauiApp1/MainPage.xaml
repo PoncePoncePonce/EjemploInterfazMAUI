@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Image
+            
+                Source="pharmacysoft.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="100"
+                
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Iniciar Sesion"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="wolas"
+                TextColor="Black"
+                Text="Usuario"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Entry
+                x:Name="txt_user"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                />
+
+            <Label
+                Text="Contraseña"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            <Entry
+                TextColor="Black"
+                x:Name="txt_password"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                IsPassword="True"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                />
+
+            <Button
+                BackgroundColor="CornflowerBlue"
+                TextColor="Black"
+                x:Name="CounterBtn"
+                Text="Log in"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
